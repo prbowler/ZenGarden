@@ -1,0 +1,10 @@
+//styles for zen garden project
+@import "./partials/variables";
+@import "./partials/intro";
+@import "./partials/main";
+@import "./partials/sidebar";
+
+
+body {
+    background-image: linear-gradient(to bottom right, darkblue, $color2);
+}
