@@ -13,8 +13,8 @@
 }
 
 .explanation {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
     padding:20px;
 }
 
@@ -22,15 +22,31 @@
     grid-column: 3 / span 2;
     grid-row: 1 / span 2;
     padding:20px;
+    background-image: url("water-plant-2.svg");
+}
+
+.participation h3 {
+    border-radius: 0 100% 100% 0 / 50%;
+    width: 100px;
+    height: 40px;
+    //margin-top: 250px;
+    background-color: RGBA(242,173,98, .75);
+    position:relative;
+    animation: 5s fish1 infinite alternate; 
+}
+
+.participation p {
+    margin-right:200px;
 }
 
 .benefits {
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
     border-radius: 0 100% 0 0;
-   
+    
     border:solid;
-    background-color: black;
+    
+    background-color: $color1;
     padding:20px;
 }
 
@@ -40,11 +56,11 @@
     width: 80px;
     height: 40px;
     margin-top: 250px;
-    background-color: RGBA(242,173,98, .25);
+    background-color: RGBA(242,173,98, .75);
     position:relative;
     bottom:0;
     right:0;
-    animation: 5s move infinite alternate;
+    animation: 5s fish2 infinite alternate;
     //animation: 1.5s push ease 5s alternate infinite;
 }
 
@@ -60,38 +76,34 @@ footer {
     padding: 20px;
 }
 
-@keyframes move { to {
-    //border-radius: 50%;
-    //bottom: 100px;
-}
-0% {
-    left: 0;
-    top: 0;
-}
-50% {
-    left: 200px;
-    top: 100px;
-}
-
-100% {
-    left:600px;
-    top:-250px;
-    
-}
-}
-
-@keyframes push {
+@keyframes fish1 {
     0% {
         left: 0;
         top: 0;
     }
     50% {
-        left: 100px;
+        left: -500px;
         top: 100px;
     }
     100% {
-        top:50px;
-        left:50px;
+        left:200px;
+        top:-50px;
+    }
+    
+}
+
+@keyframes fish2 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    50% {
+        left: 200px;
+        top: 100px;
+    }
+    100% {
+        left:800px;
+        top:-100px;
     }
     
 }
