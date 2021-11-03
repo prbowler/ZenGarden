@@ -36,12 +36,12 @@
 }
 
 .participation p {
-    margin-right:200px;
+    margin-right:100px;
 }
 
 .benefits {
     grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
+    grid-row: 1 / span 2;
     border-radius: 0 100% 0 0;
     
     border:solid;
@@ -62,6 +62,10 @@
     right:0;
     animation: 5s fish2 infinite alternate;
     //animation: 1.5s push ease 5s alternate infinite;
+}
+
+.benifits p {
+    max-width: 50px;
 }
 
 .requirements {
