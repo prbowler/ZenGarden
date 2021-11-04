@@ -2,82 +2,81 @@
 .main{
     border:solid;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20em 20em;
+    grid-template-rows: 10em 30em 30em 40em 20em;
 }
 
-
 .main p {
-    color: white;
-    
+    color: white; 
 }
 
 .explanation {
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 2;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
     padding:20px;
 }
 
 .participation {
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
     padding:20px;
-    background-image: url("./img/water-plant-2.svg");
 }
 
-.participation h3 {
-    border-radius: 0 100% 100% 0 / 50%;
-    width: 100px;
-    height: 40px;
-    //margin-top: 250px;
-    background-color: RGBA(242,173,98, .75);
-    position:relative;
-    animation: 5s fish1 infinite alternate; 
+.benefits {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    padding:20px;
+}
+
+.requirements {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+    padding: 20px;
+}
+
+footer {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+    padding: 20px;
 }
 
 .participation p {
     margin-right:100px;
-}
-
-.benefits {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 2;
-    border-radius: 0 100% 0 0;
-    
-    border:solid;
-    
-    background-color: $color1;
-    padding:20px;
-}
-
-.benefits h3{
-    //border:solid;
-    border-radius: 0 100% 100% 0 / 50%;
-    width: 80px;
-    height: 40px;
-    margin-top: 250px;
-    background-color: RGBA(242,173,98, .75);
-    position:relative;
-    bottom:0;
-    right:0;
-    animation: 5s fish2 infinite alternate;
-    //animation: 1.5s push ease 5s alternate infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .benifits p {
     max-width: 50px;
 }
 
-.requirements {
-    grid-column: 1 / span 4;
-    grid-row: 3 / span 1;
-    padding: 20px;
+.participation::before {
+    content: url("./img/goldfish.svg");
+    position:fixed;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    bottom:0;
+    right:0;
+    animation: 5s fish1 infinite alternate;
 }
 
-footer {
-    grid-column: 1 / span 4;
-    grid-row: 4 / span 1;
-    padding: 20px;
+.benefits::before {
+    content: url("./img/goldfish.svg");
+    position:fixed;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    bottom:0;
+    right:0;
+    animation: 5s fish2 infinite alternate;
+}
+
+.requirements::before {
+    content: url("./img/bubble.svg");
+    position:fixed;
+    bottom:0;
+    right:0;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    animation: 15s bubble1 infinite alternate;
 }
 
 @keyframes fish1 {
@@ -108,6 +107,22 @@ footer {
     100% {
         left:800px;
         top:-100px;
+    }
+    
+}
+
+@keyframes bubble1 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    50% {
+        left: 50px;
+        top: -100px;
+    }
+    100% {
+        left:-50px;
+        top:-2000px;
     }
     
 }
