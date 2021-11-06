@@ -1,23 +1,10 @@
-//sidebar-navigation
-// .sidebar{
-//     border:solid;
-
-//       }
-.sidebar {
-  height: 100%;
-  /*position: fixed;*/
-  overflow: auto;
-  /*margin-left: 79%;*/
-  background-color: $color4;
-}
-
 ul {
   list-style-type: none;
 
 }
 
 .design-name {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .designer-name {
@@ -35,6 +22,43 @@ ul {
   color: $color1;
 }
 
-// ul {
-//   border: 1px solid #555;
-// }
+
+@media only screen and (min-width: 600px) {
+  .sidebar {
+    background-image: url("./img/boulder.jpg");
+    height: 100%;
+    background-size: 100% contain;
+
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20em 20em 20em;
+    min-height: 1000px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .design-selection {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .design-archives {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .zen-resources {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .sidebar h3 {
+    font-family: $primary-font;
+    margin-left: 2em;
+  }
+
+}
