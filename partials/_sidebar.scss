@@ -3,11 +3,23 @@
 //     border:solid;
 
 //       }
+<<<<<<< HEAD
 // .sidebar {
 //   height: 100%;
 //   /*position: fixed;*/
 //   overflow: auto;
 //  }
+=======
+.wrapper {
+  height: 100%;
+  /*position: fixed;*/
+  //overflow: auto;
+  /*margin-left: 79%;*/
+  //background-color: $color4;
+  background-image: url("./img/coral.png");
+  background-image: no-repeat;
+}
+>>>>>>> 298e2fbc0312705512e717a8d70ce3b43525dfbe
 
 ul {
   list-style-type: none;
