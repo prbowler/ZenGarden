@@ -1,14 +1,12 @@
 //main
 .main{
-    border:solid;
+    //border:solid;
     display:grid;
     grid-template-columns: 20em 20em;
-    grid-template-rows: 10em 30em 30em 40em 20em;
+    grid-template-rows: 20em 30em 30em 40em;
 }
 
-.main p {
-    color: white; 
-}
+
 
 .explanation {
     grid-column: 1 / span 2;
@@ -40,13 +38,29 @@
     padding: 20px;
 }*/
 
+.main p {
+    color: white; 
+    font-family: $primary-font;
+}
+
+.explanation p {
+    font-family: $secondary-font;
+}
+
 .participation p {
-    margin-right:100px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $secondary-font;
 }
 
 .benifits p {
-    max-width: 50px;
+    font-family: $secondary-font;
+}
+
+.benifits p {
+    font-family: $secondary-font;
+}
+
+.requirements p {
+    font-family: $secondary-font;
 }
 
 .participation::before {
