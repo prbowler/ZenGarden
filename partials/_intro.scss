@@ -1,4 +1,16 @@
 //intro
 .intro {
-    border:solid;
+    background-image: url("./img/sun.svg");
+    font: $secondary-font;
+}
+
+.intro h1 {
+    font-family: $secondary-font;
+    font-size: 6em;
+    text-align: center;
+    
+}
+
+.preamble::before {
+    content: url("./img/castle.svg");
 }
