@@ -1,36 +1,30 @@
 ul {
   list-style-type: none;
+}
 
-}
-.sidebar a{
-  color:$color1;
-}
-.sidebar a:hover{
-  background-color: white;
-  color: black;
-}
 .design-name {
   text-decoration: underline;
-  
 }
 
 .designer-name {
   text-decoration: underline;
-
 }
-
 
 @media only screen and (min-width: 600px) {
   .sidebar {
-    background-color: rgba(141,135,65, 1);
+    background-color: rgba(141, 135, 65, 1);
     background-image: url("./img/sun.svg"), linear-gradient($color2, darkblue);
     background-size: 72em, auto;
     background-repeat: no-repeat, repeat;
-    // height: 100%;
+  }
 
-    // width: 15em ;
-    // border-radius: 0 50% 50% 0;
+  .sidebar a {
+    color: $color1;
+  }
 
+  .sidebar a:hover {
+    background-color: white;
+    color: black;
   }
 
   .wrapper {
@@ -67,6 +61,6 @@ ul {
     font-family: $secondary-font;
     margin: 5px;
     display: block;
-    
+
   }
 }
