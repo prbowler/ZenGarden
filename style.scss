@@ -8,7 +8,7 @@
 
 .page-wrapper {
     max-height: 200em;
-    background-image: linear-gradient($color2, darkblue );
+    
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
@@ -22,6 +22,7 @@
 .main {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    background-image: linear-gradient($color2, darkblue );
 }
 
 .sidebar {
