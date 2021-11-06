@@ -50,7 +50,7 @@
     color: $color3;
 }
 
-/*.explanation p {
+.explanation p {
     margin: auto;
     font-family: $secondary-font;
 }
@@ -69,9 +69,9 @@
 
 .requirements p {
     font-family: $secondary-font;
-}*/
+}
 
-/*.participation::before {
+.participation::before {
     content: url("./img/goldfish.svg");
     position:fixed;
     grid-column: 1 / span 2;
@@ -147,4 +147,4 @@
         top:-2000px;
     }
     
-}*/
+}
