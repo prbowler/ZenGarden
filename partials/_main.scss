@@ -71,6 +71,16 @@
     font-family: $secondary-font;
 }
 
+.explanation::before {
+    content: url("./img/goldfish.svg");
+    position:fixed;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    bottom:0;
+    right:0;
+    animation: 5s fish1 infinite alternate;
+}
+
 .participation::before {
     content: url("./img/goldfish.svg");
     position:fixed;
@@ -78,18 +88,19 @@
     grid-row: 2 / span 1;
     bottom:0;
     right:0;
-    animation: 5s fish1 infinite alternate;
+    animation: 5s fish2 infinite alternate;
 }
 
 .benefits::before {
-    content: url("./img/goldfish.svg");
+    content: url("./img/bubble.svg");
     position:fixed;
     grid-column: 1 / span 2;
     grid-row: 3 / span 1;
     bottom:0;
     right:0;
-    animation: 5s fish2 infinite alternate;
+    animation: 10s bubble1 infinite alternate;
 }
+
 
 .requirements::before {
     content: url("./img/bubble.svg");
@@ -98,7 +109,7 @@
     right:0;
     grid-column: 1 / span 2;
     grid-row: 3 / span 1;
-    animation: 15s bubble1 infinite alternate;
+    animation: 10s bubble2 infinite alternate;
 }
 
 @keyframes fish1 {
@@ -140,11 +151,27 @@
     }
     50% {
         left: 50px;
-        top: -100px;
+        top: 500px;
     }
     100% {
         left:-50px;
-        top:-2000px;
+        top:-1000px;
+    }
+    
+}
+
+@keyframes bubble2 {
+    0% {
+        left: 100;
+        top: 0;
+    }
+    50% {
+        left: 150px;
+        top: 500px;
+    }
+    100% {
+        left:250px;
+        top:-1000px;
     }
     
 }
