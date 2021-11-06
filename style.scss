@@ -7,10 +7,26 @@
 @import "./partials/extras";
 
 .page-wrapper {
+    max-height: 200em;
     background-image: linear-gradient($color2, darkblue );
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.intro {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.main {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.sidebar {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
 }
 
 
