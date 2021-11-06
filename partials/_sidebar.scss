@@ -34,7 +34,7 @@ ul {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20em 20em 20em;
+    grid-template-rows: 20em 7em 20em;
     min-height: 1000px;
     position: fixed;
     height: 100%;
@@ -60,5 +60,8 @@ ul {
     font-family: $primary-font;
     margin-left: 2em;
   }
-
+.sidebar ul{
+  font-family: $secondary-font;
+  margin: 5px;
+}
 }
