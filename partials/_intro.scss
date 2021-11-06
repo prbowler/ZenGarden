@@ -2,9 +2,9 @@
 .intro {
     background: url("./img/sun.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center center;
-    // background-attachment: fixed;
+    //background-attachment: fixed;
     font: $secondary-font;
     height: 700px;
     margin: 0;
@@ -13,19 +13,16 @@
 
 .intro h1 {
     font-family: $secondary-font;
-    font-size: 6em;
+    font-size: 6vw;
     text-align: center; 
 }
 .intro h2 {
-    font-family: $primary-font;
     font-size: 2em;
     text-align: right;
     padding: 30px;
 }
-.summary {
-    grid-column: 2 / 3;
-}
-.preamble {
+ 
+.intro h2, .summary, .preamble {
     font-family: $primary-font;
 }
 .intro h2, .summary, .preamble {
