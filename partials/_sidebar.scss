@@ -3,12 +3,14 @@
 //     border:solid;
 
 //       }
-.sidebar {
+.wrapper {
   height: 100%;
   /*position: fixed;*/
-  overflow: auto;
+  //overflow: auto;
   /*margin-left: 79%;*/
-  background-color: $color4;
+  //background-color: $color4;
+  background-image: url("./img/coral.png");
+  background-image: no-repeat;
 }
 
 ul {
