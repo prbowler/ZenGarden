@@ -1,17 +1,24 @@
 //intro
 .intro {
     background-image: url("./img/sun.svg");
-    // background: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     font: $secondary-font;
+    height: 600px;
 }
 
 .intro h1 {
     font-family: $secondary-font;
     font-size: 6em;
-    text-align: center;
-    
+    text-align: center; 
 }
-
-.preamble::before {
-    content: url("./img/castle.svg");
+.intro h2 {
+    font-family: $primary-font;
+    font-size: 2em;
+    text-align: right;
+    padding: 30px;
+}
+.summary {
+    grid-column: 2 / span 1;
 }
