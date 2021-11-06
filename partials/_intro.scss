@@ -1,11 +1,14 @@
 //intro
 .intro {
-    background-image: url("./img/sun.svg");
+    background: url("./img/sun.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-position: center center;
+    // background-attachment: fixed;
     font: $secondary-font;
     height: 700px;
+    margin: 0;
+    padding: 0;
 }
 
 .intro h1 {
@@ -24,4 +27,7 @@
 }
 .preamble {
     font-family: $primary-font;
+}
+.intro h2, .summary, .preamble {
+    padding: 20px;
 }
