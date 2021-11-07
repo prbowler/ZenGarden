@@ -1,7 +1,7 @@
 //main
 .main{
     //border:solid;
-    max-height: 75em;
+    //max-height: 75em;
     display:grid;
     grid-template-columns: 1fr 1fr;
     //grid-template-rows: 20em 20em 10em 30em;
@@ -37,17 +37,35 @@
 .main p {
     color: $color5; 
     font-family: $secondary-font;
-    margin: 0 5em 0 5em;
+    margin: 0 1em 0 1em;
 }
 
 .main h3{
     color: $color4; 
     font-family: $primary-font;
-    margin-left:4em;
+    margin-left:0em;
 }
 
 .main a {
     color: $color3;
+}
+
+footer {
+    display:block;
+    //margin-left: 4em;
+    padding: 2em;
+    //margin: auto;
+}
+
+footer h3{
+    font-family: $primary-font;
+    margin-left: 2em;
+    color:$color5;
+}
+
+footer a {
+    color: $color5;
+    text-align: center;
 }
 
 .explanation p {
