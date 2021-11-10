@@ -13,8 +13,13 @@
 
 .intro h1 {
     font-family: $primary-font;
+    color: $color6;
     font-size: 6vw;
     text-align: center; 
+    @media(min-width:600px) {
+        font-size: 3.2rem;
+      }
+    
 }
 .intro h2 {
     font-size: 2em;
