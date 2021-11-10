@@ -17,7 +17,7 @@
     font-size: 6vw;
     text-align: center; 
     @media(min-width:600px) {
-        font-size: 3.2rem;
+        font-size: 3.0vh;
       }
     
 }
@@ -26,6 +26,9 @@
     text-align: right;
     padding: 30px;
     font-family: $primary-font;
+    @media(min-width:600px) {
+        font-size: 1.5em;
+      }
 }
  
 .summary, .preamble {

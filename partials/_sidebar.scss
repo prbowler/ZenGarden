@@ -2,9 +2,7 @@ ul {
   list-style-type: none;
 }
 
-.design-name {
-  text-decoration: underline;
-}
+
 
 .designer-name {
   text-decoration: underline;
@@ -23,6 +21,12 @@ ul {
   font-family: $primary-font;
   margin-left: 2em;
   color:$color5;
+}
+
+
+.sidebar ul li a:link{
+  text-decoration: none;
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -68,4 +72,7 @@ ul {
     display: block;
 
   }
+
+
+  
 }
