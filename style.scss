@@ -36,15 +36,15 @@
 
 @media only screen and (min-width: 600px) {
     .page-wrapper {
-        grid-template-columns: 2fr 3fr 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-rows: 2fr 3fr;
     }  
     
     .intro {
         grid-column: 1 / span 3;
         grid-row: 1 / span 1;
         //background-attachment: fixed;
-        background-size: 100%;
+        background-size: cover;
     }
     
     .main {
@@ -59,4 +59,17 @@
         //margin-left: 79%;
     }
 
+}
+
+@media only screen and (min-width: 950px) {
+    .page-wrapper {
+        grid-template-rows: 3fr 3fr;
+    }  
+}
+
+@media only screen and (min-width: 1500px) {
+    .page-wrapper {
+        grid-template-columns: 2fr 3fr 1fr;
+        grid-template-rows: 4fr 3fr;
+    }  
 }
