@@ -1,17 +1,40 @@
 //intro
 .intro {
-    background: url("./img/sun.svg");
+    background: url("./img/sun-tbg.svg") top left, 
+    url("./img/bottom-layer.svg") 0px 560px, 
+    url("./img/middle-layer.svg") 0px 550px, 
+    url("./img/foam-layer.svg") 0px 250px, 
+    url("./img/beach-castle.svg"), 
+    url("./img/sky.svg");
+    height: 100vh;
+    //background: url("./img/sun.svg");
     background-repeat: no-repeat;
-    background-size: contain, 30em;
+    //background-size: 20px, cover;
     //background-position: center center;
     //background-attachment: fixed;
     //font: $secondary-font;
-    //height: 700px;
-    margin: 0;
-    padding: 0;
+    position: relative;
+  animation-name: ocean;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+    
+    
 }
+@keyframes ocean {
+    0%   { left:0px; top:0px;}
+    25%  { left:10px; top:100px;}
+    50%  { left: 0px; top:0px;}
+   
+  }
+// .intro h1::before {
+//   display: grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr; 
+// background-image: url("./img/sun.svg");
+// outline: 3px solid green;
+// }
 
 .intro h1 {
+    
     font-family: $primary-font;
     color: $color6;
     font-size: 6vw;
