@@ -55,7 +55,10 @@
     .sidebar {
         grid-column: 3 / span 1;
         grid-row: 2 / span 1;
-        border-top: solid $color6 ;
+        border: solid $color1;
+        border-radius: 15px;
+        border-style: ridge;
+        padding: 5px;
     }
 
 }
