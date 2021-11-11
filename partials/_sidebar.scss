@@ -31,10 +31,11 @@ ul {
 
 @media only screen and (min-width: 600px) {
   .sidebar {
-    background-color: rgba(141, 135, 65, 1);
-    background-image: linear-gradient($color2, darkblue);
-    background-size: 72em, auto;
-    background-repeat: no-repeat, repeat;
+    //background-color: rgba(141, 135, 65, .25); 
+    background-color: rgba(242, 242, 242, .05)
+    //background-image: linear-gradient($color2, darkblue);
+    //background-size: 72em, auto;
+    //background-repeat: no-repeat, repeat;
   }
 
   
