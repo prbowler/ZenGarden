@@ -1,15 +1,39 @@
-ul {
-  list-style-type: none;
+.sidebar {
+  padding: 1.5em;
 }
 
+.select,
+.archives,
+.resources {
+  font-family: $primary-font;
+  font-size: 1.5em;
+  color: $color5;
+}
 
+.archives,
+.resources {
 
-.designer-name {
-  text-decoration: underline;
+  margin-top: .5em;
+}
+
+.design-name {
+  text-transform: uppercase;
+  margin-left: 2em;
+}
+
+.design-selection li,
+.zen-resources li {
+  text-decoration: none;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 .sidebar a {
   color: $color5;
+}
+
+.siderbar ul {
+  list-style-type: none;
 }
 
 .sidebar a:hover {
@@ -17,37 +41,40 @@ ul {
   color: black;
 }
 
-.sidebar h3 {
-  font-family: $primary-font;
-  margin-left: 2em;
-  color:$color5;
+.next,
+.viewall {
+  margin: .5em;
 }
 
-
-.sidebar ul li a:link{
-  text-decoration: none;
+.sidebar ul li a:link {
+  text-decoration: underline;
 
 }
 
 @media only screen and (min-width: 600px) {
   .sidebar {
     //background-color: rgba(141, 135, 65, .25); 
-    background-color: rgba(242, 242, 242, .05)
-    //background-image: linear-gradient($color2, darkblue);
-    //background-size: 72em, auto;
-    //background-repeat: no-repeat, repeat;
+    background-color: rgba(242, 242, 242, .05) //background-image: linear-gradient($color2, darkblue);
+      //background-size: 72em, auto;
+      //background-repeat: no-repeat, repeat;
   }
-
-  
 
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20em 7em 20em;
+    grid-template-rows: 33em 10em 10em;
     min-height: 1000px;
     //position: fixed;
     height: 100%;
     overflow: auto;
+  }
+
+  .sidebar a {
+    line-height: 1.6;
+  }
+
+  .design-name {
+    text-transform: uppercase;
   }
 
   .design-selection {
@@ -55,9 +82,21 @@ ul {
     grid-row: 1 / span 1;
   }
 
+  .design-selection li,
+  .zen-resources li {
+    clear: both;
+    // padding: 1em;
+    color: $color6;
+  }
+
   .design-archives {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+
+  }
+
+  .design-archives ul {
+    // padding: 1em;
   }
 
   .zen-resources {
@@ -65,15 +104,11 @@ ul {
     grid-row: 3 / span 1;
   }
 
-  
-
   .sidebar ul {
     font-family: $secondary-font;
-    margin: 5px;
+    // margin: 5px;
+    // margin-left: 15px;
     display: block;
-
   }
 
-
-  
 }
