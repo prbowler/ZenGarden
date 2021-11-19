@@ -1,7 +1,15 @@
 //footer
 footer {
-    content: " ";
-    display: block;
-    padding-top: 10px;
-    border-top: 1px solid $color6;
-  }
+  content: " ";
+  display: block;
+  padding-top: 20px;
+  border-top: 1px solid $color6;
+  text-align: center;
+  display: inline-block
+}
+
+footer a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
