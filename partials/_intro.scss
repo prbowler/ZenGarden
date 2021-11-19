@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+
+
 //intro
+section.intro {
+  margin: 0;
+  padding: 0;
+}
 .intro {
     background: url("./img/sun-tbg.svg") top left, 
-    url("./img/bottom-layer.svg") 0px 560px, 
-    url("./img/middle-layer.svg") 0px 550px, 
-    url("./img/foam-layer.svg") 0px 250px, 
-    url("./img/beach-castle.svg"), 
+    // url("./img/bottom-layer.svg") 0px 560px, 
+    // url("./img/middle-layer.svg") 0px 550px, 
+    // url("./img/foam-layer.svg") 0px 250px, 
+    url("./img/beach-castle.svg") 0px 100px, 
     url("./img/sky.svg");
     height: 100vh;
     //background: url("./img/sun.svg");
@@ -14,10 +21,10 @@
     //background-attachment: fixed;
     //font: $secondary-font;
     position: relative;
-  animation-name: ocean;
-  animation-duration: 5s;
+  // /animation-name: ocean;
+  //animation-duration: 5s;
   //animation-iteration-count: infinite;
-    
+    // https://codepen.io/tedmcdo/pen/PqxKXg?editors=1100
     
 }
 @keyframes ocean {
@@ -33,21 +40,23 @@
 // outline: 3px solid green;
 // }
 
-.intro h1 {
-    
-    font-family: $primary-font;
+header h1 {
+  text-decoration: green wavy underline;
+  text-underline-position: under;
+  text-underline-offset: 3px;
+    font-family: 'Lobster Two', cursive;
     color: $color6;
     font-size: 6vw;
     text-align: center; 
     @media(min-width:600px) {
-        font-size: 3.0vh;
+        font-size: 10vh;
       }
     
 }
 .intro h2 {
+  text-align: center;
     font-size: 2em;
-    text-align: right;
-    padding: 30px;
+    padding: 10px;
     font-family: $primary-font;
     @media(min-width:600px) {
         font-size: 1.5em;
@@ -57,6 +66,46 @@
 .summary, .preamble {
     font-family: $secondary-font;
 }
-.intro h2, .summary, .preamble {
+header h1, .summary, .preamble {
     padding: 20px;
+}
+.summary {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.preamble {
+  width: 60vw;
+  margin-top: 50px;
+  text-align: center;
+  margin-left: auto; 
+margin-right: 0;
+background: url("./img/wave.svg") repeat-x; 
+  position: absolute;
+  top: 430px;
+  width: 6400px;
+  height: 98px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+}
+
+section div.preamble::after {
+  
+}
+.preamble h3 {
+font-weight: bold;
+font-size: 20px;
+}
+
+
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
 }
