@@ -75,6 +75,9 @@ header h1, .summary, .preamble {
   margin: 0 auto;
 }
 
+.summary p >a {
+  text-decoration: none;
+}
 .preamble {
   width: 60vw;
   margin-top: 50px;

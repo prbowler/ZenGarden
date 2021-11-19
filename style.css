@@ -5,7 +5,6 @@ section.intro {
 }
 
 .intro {
-<<<<<<< HEAD
   background: url("./img/sun-tbg.svg") top left, url("./img/beach-castle.svg") 0px 100px, url("./img/sky.svg");
   height: 100vh;
   background-repeat: no-repeat;
@@ -48,68 +47,18 @@ header h1 {
   text-underline-position: under;
   text-underline-offset: 3px;
   font-family: 'Lobster Two', cursive;
-=======
-  background: url("./img/sun-tbg.svg") top left, url("./img/bottom-layer.svg") 0px 560px, url("./img/middle-layer.svg") 0px 550px, url("./img/foam-layer.svg") 0px 250px, url("./img/beach-castle.svg"), url("./img/sky.svg");
-  height: 100vh;
-  background-repeat: no-repeat;
-  position: relative;
-  -webkit-animation-name: ocean;
-          animation-name: ocean;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-
-@-webkit-keyframes ocean {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    left: 10px;
-    top: 100px;
-  }
-  50% {
-    left: 0px;
-    top: 0px;
-  }
-}
-
-@keyframes ocean {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    left: 10px;
-    top: 100px;
-  }
-  50% {
-    left: 0px;
-    top: 0px;
-  }
-}
-
-.intro h1 {
-  font-family: "Open Sans", sans-serif;
->>>>>>> 0da9030fda1a22050c24f1aaf45de7172293df28
   color: #003247;
   font-size: 6vw;
   text-align: center;
 }
 
 @media (min-width: 600px) {
-<<<<<<< HEAD
   header h1 {
     font-size: 10vh;
-=======
-  .intro h1 {
-    font-size: 3.0vh;
->>>>>>> 0da9030fda1a22050c24f1aaf45de7172293df28
   }
 }
 
 .intro h2 {
-<<<<<<< HEAD
   text-align: center;
   font-size: 2em;
   padding: 10px;
@@ -136,6 +85,10 @@ header h1, .summary, .preamble {
   margin: 0 auto;
 }
 
+.summary p > a {
+  text-decoration: none;
+}
+
 .preamble {
   width: 60vw;
   margin-top: 50px;
@@ -147,8 +100,8 @@ header h1, .summary, .preamble {
   top: 430px;
   width: 6400px;
   height: 98px;
-  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  -webkit-animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+          animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   overflow: hidden;
@@ -175,26 +128,6 @@ header h1, .summary, .preamble {
   100% {
     margin-left: -1600px;
   }
-=======
-  font-size: 2em;
-  text-align: right;
-  padding: 30px;
-  font-family: "Open Sans", sans-serif;
-}
-
-@media (min-width: 600px) {
-  .intro h2 {
-    font-size: 1.5em;
-  }
-}
-
-.summary, .preamble {
-  font-family: "Seaweed Script", cursive;
-}
-
-.intro h2, .summary, .preamble {
-  padding: 20px;
->>>>>>> 0da9030fda1a22050c24f1aaf45de7172293df28
 }
 
 .main {
@@ -479,10 +412,6 @@ footer a {
 footer {
   content: " ";
   display: block;
-<<<<<<< HEAD
-  padding-top: 10px;
-  border-top: 1px solid #003247;
-=======
   padding-left: 30px;
   padding-top: 20px;
   border-top: 1px solid #003247;
@@ -492,7 +421,6 @@ footer {
 
 footer > a {
   text-decoration: none;
->>>>>>> 0da9030fda1a22050c24f1aaf45de7172293df28
 }
 
 .sidebar {
@@ -526,21 +454,12 @@ footer > a {
 
 .sidebar a {
   color: #fbeec1;
-<<<<<<< HEAD
 }
 
 .siderbar ul {
   list-style-type: none;
 }
 
-=======
-}
-
-.siderbar ul {
-  list-style-type: none;
-}
-
->>>>>>> 0da9030fda1a22050c24f1aaf45de7172293df28
 .sidebar a:hover {
   background-color: white;
   color: black;
@@ -669,14 +588,11 @@ table {
   border-spacing: 0;
 }
 
-<<<<<<< HEAD
 .css-zen-garden {
   margin: 0;
   padding: 0;
 }
 
-=======
->>>>>>> 0da9030fda1a22050c24f1aaf45de7172293df28
 .page-wrapper {
   display: -ms-grid;
   display: grid;
@@ -704,10 +620,7 @@ table {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / span 1;
-<<<<<<< HEAD
   overflow: hidden;
-=======
->>>>>>> 0da9030fda1a22050c24f1aaf45de7172293df28
 }
 
 .sidebar {
