@@ -1,0 +1,265 @@
+//animations
+.explanation::before {
+    content: url("./img/clownfish.svg");
+    position:absolute;
+    min-width: 150px;
+    animation: 30s fish1 infinite;
+}
+
+.explanation::after {
+    content: url("./img/turtle.svg");
+    position:absolute;
+    min-width: 150px;
+    animation: 30s turtle infinite;
+}
+
+.participation::before {
+    content: url("./img/mystica.svg");
+    position:absolute;
+    animation: 15s fish2 infinite;
+    min-width:150px;
+}
+
+.benefits::before {
+    content: url("./img/bubble.svg");
+    position:absolute;
+    animation: 10s bubble1 infinite;
+}
+
+.benefits::after {
+    content: url("./img/bubble.svg");
+    position:absolute;
+    animation: 20s bubble2 infinite;
+}
+
+.requirements::before {
+    content: url("./img/bubble.svg");
+    position:absolute;
+    animation: 15s bubble3 infinite;
+}
+
+.requirements::after {
+    content: url("./img/bubble.svg");
+    position:absolute;
+    animation: 25s bubble4 infinite;
+}
+
+@keyframes turtle {
+    0% {
+        transform: rotate(10deg);
+        left: 0px;
+        top: -200px;
+    }
+    10% {
+        transform: rotate(-10deg);
+        left: 100px;
+        top: -180px;
+    }
+    20% {
+        transform: rotate(10deg);
+        left:200px;
+        top: -160px;
+    }
+
+    30% {
+        transform: rotate(-10deg);
+        left: 300px;
+        top: -140px;
+    }
+    40% {
+        transform: rotate(10deg);
+        left: 400px;
+        top: -120px;
+    }
+    50% {
+        transform: rotate(-10deg);
+        left:500px;
+        top: -100px;
+    }
+    60% {
+        transform: rotate(10deg);
+        left: 600px;
+        top: -80px;
+    }
+    70% {
+        transform: rotate(-10deg);
+        left: 700px;
+        top: -60px;
+    }
+    80% {
+        transform: rotate(10deg);
+        left:800px;
+        top: -40px;
+    }
+    90% {
+        transform: rotate(-10deg);
+        left: 900px;
+        top: 0px;
+    }
+    100% {
+        transform: rotate(30deg);
+        left: 2000px;
+        top: 400px;
+    }
+    
+}
+
+@keyframes fish1 {
+    0% {
+        transform: scale(.25);
+        left: -400px;
+        top: 400px;
+    }
+    25% {
+        transform:scale(1);
+        left: 600px;
+        top: 200px;
+    }
+    50% {
+        transform:rotate(20deg);
+        left:2000px;
+        top:400px;
+    }
+
+    55% {
+        transform:scaleX(.90);
+        left:2000px;
+        top:300px;
+    }
+    60% {
+        transform:scaleX(.75);
+        left:2000px;
+        top:200px;
+    }
+
+    65% {
+        transform:scaleX(-1);
+        left:2000px;
+        top:200px;
+    }
+
+    75% {
+        transform:scaleX(-1);
+        left: 600px;
+        top: 400px;
+    }
+    100% {
+        transform:scaleX(-1);
+        left:-400px;
+        top:600px;
+    }
+    
+}
+
+@keyframes fish2 {
+    0% {
+        transform: scale(.25);
+        left: -400px;
+        top: 200px;
+    }
+    25% {
+        transform:scale(1);
+        left: 900px;
+        top: 0px;
+    }
+    50% {
+        left:2000px;
+        top:300px;
+    }
+
+    55% {
+        transform:scaleX(.90);
+        left:2000px;
+        top:100px;
+    }
+    60% {
+        transform:scaleX(.75);
+        left:2000px;
+        top:100px;
+    }
+
+    65% {
+        transform:scaleX(-1);
+        left:2000px;
+        top:0px;
+    }
+
+    75% {
+        transform:scaleX(-1);
+        left: 900px;
+        top: 100px;
+    }
+    100% {
+        transform:scaleX(-1);
+        left:-400px;
+        top:200px;
+    }
+    
+}
+
+@keyframes bubble1 {
+    0% {
+        left: 0;
+        top: 1500px;
+    }
+    50% {
+        left: 50px;
+        top: 900px;
+    }
+    100% {
+        left:-50px;
+        top:50px;
+    }
+    
+}
+
+@keyframes bubble2 {
+    0% {
+        left: 600px;
+        top: 1600px;
+    }
+    50% {
+        left: 450px;
+        top: 800px;
+    }
+    100% {
+        left:500px;
+        top: 0px;
+    }
+    
+}
+
+@keyframes bubble3 {
+    0% {
+        left: 900px;
+        top: 1600px;
+    }
+    50% {
+        left: 950px;
+        top: 800px;
+    }
+    100% {
+        left:900px;
+        top: 0px;
+    }
+    
+}
+
+@keyframes bubble4 {
+    0% {
+        transform: scale(.25);
+        left: 300px;
+        top: 1600px;
+    }
+    50% {
+        transform: scale(.25);
+        left: 350px;
+        top: 800px;
+    }
+    100% {
+        transform: scale(.25);
+        left:200px;
+        top: 0px;
+    }
+    
+}
