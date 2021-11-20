@@ -3,9 +3,9 @@
     content: url("./img/wave.svg"); 
     min-width: 100vw;
     position: absolute;
-    top: 355px;
+    top: 305px;
     width: 4000px;
-    animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite alternate;
+    animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite alternate-reverse;
     transform: translate3d(0, 0, 0);
     z-index: 0;
 } 
@@ -57,11 +57,11 @@
 
 @keyframes wave {
     0% {
-        transform: scaleY(.1);
+        transform: scaleY(.2);
         margin-left: 0;
     }
     100% {
-        transform: scaleY(.1);
+        transform: scaleY(.2);
         margin-left: -1600px;
     }
 }
