@@ -1,7 +1,11 @@
 .sidebar {
   padding: 1.5em;
+  display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
 }
 
+//headers
 .select,
 .archives,
 .resources {
@@ -18,8 +22,7 @@
 
 .design-name {
   text-transform: uppercase;
-  margin-left: 2em;
-}
+ }
 
 .design-selection li,
 .zen-resources li {
@@ -30,6 +33,7 @@
 
 .sidebar a {
   color: $color5;
+  
 }
 
 .siderbar ul {
@@ -81,12 +85,12 @@
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
   }
-
+//the word by
   .design-selection li,
   .zen-resources li {
     clear: both;
     // padding: 1em;
-    color: $color6;
+    color: purple;
   }
 
   .design-archives {
@@ -111,4 +115,7 @@
     display: block;
   }
 
+  .sidebar li{
+    margin-left: 2em;
+  }
 }
