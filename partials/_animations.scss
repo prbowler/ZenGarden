@@ -3,12 +3,46 @@
     content: url("./img/wave2.svg"); 
     min-width: 100vw;
     position: absolute;
-    bottom: -256px;
-    width: 2300px;
+    bottom: -335px;
+    width: 3000px;
     animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite alternate-reverse;
     transform: translate3d(0, 0, 0);
     z-index: 0;
 } 
+
+.extra1 {
+    content: url("./img/grass.svg");
+    position: absolute;
+    bottom:-2115px;
+    left:0px;
+    width:100%;
+    transform: scale(1, .5);
+    z-index:1;
+    border:none;
+}
+
+.extra2 {
+    content: url("./img/coral.png");
+    position: absolute;
+    bottom:-2050px;
+    left:300px;
+    width:40%;
+    animation: 45s seaweed infinite alternate-reverse;
+    border:none;
+    z-index:2;
+}
+
+.extra3 {
+    content: url("./img/octopus-v1.svg");
+    position: absolute;
+    bottom:-2250px;
+    left:100px;
+    width:40%;
+    animation: 30s octo infinite alternate-reverse;
+    border:none;
+    z-index:0;
+}
+
 
 .explanation::before {
     content: url("./img/clownfish.svg");
@@ -63,6 +97,52 @@
     100% {
         transform: scaleY(.1);
         margin-left: -1600px;
+    }
+}
+
+@keyframes octo {
+    0% {
+        transform: scale(1, .75);
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    75% {
+        transform: scale(1, 1.5);
+    }
+    100% {
+        transform: scale(1, .5);
+    }
+}
+
+@keyframes seaweed {
+    0% {
+        //transform: scaleY(1);
+        transform: scale(1, 1);
+        margin-left: 0;
+    }
+    25% {
+        //transform: scaleY(.75);
+        transform: scale(1.25, .75);
+        margin-left: 5px;
+    }
+    50% {
+        //transform: scaleY(1);
+        transform: scale(1, 1);
+        margin-left: 0;
+    }
+    75% {
+        //transform: scaleY(.75);
+        transform: scale(1.25, .75);
+        margin-left: 5px;
+    }
+    100% {
+        //transform: scaleY(1);
+        transform: scale(1, 1);
+        margin-left: 0;
     }
 }
 
@@ -287,6 +367,26 @@
 }
 
 @media only screen and (min-width: 700px) {
+    .extra1 {
+        bottom:-1960px;
+        left:0px;
+        width:100%;
+        transform: scale(1, .5);
+    }
+
+    .extra2 {
+        bottom:-1850px;
+        left:300px;
+        width:40%;
+    }
+
+    .extra3 {
+        bottom:-1850px;
+        left:300px;
+        width:40%;
+    }
+}
+@media only screen and (min-width: 900px) {
     @keyframes wave {
         0% {
             transform: scaleY(.2);
@@ -302,5 +402,24 @@
         bottom: -395px;
         width: 4000px;
     } 
+
+    .extra1 {
+        bottom:-1530px;
+        left:0px;
+        width:100%;
+        transform: scale(1, .5);
+    }
+
+    .extra2 {
+        bottom:-1350px;
+        left:50%;
+        width:40%;
+    }
+
+    .extra3 {
+        bottom:-1950px;
+        left:20%;
+        width:40%;
+    }
 
 }
