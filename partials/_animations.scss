@@ -1,4 +1,15 @@
 //animations
+.intro::after {
+    content: url("./img/wave.svg"); 
+    min-width: 100vw;
+    position: absolute;
+    top: 355px;
+    width: 4000px;
+    animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite alternate;
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+} 
+
 .explanation::before {
     content: url("./img/clownfish.svg");
     position:absolute;
@@ -42,6 +53,17 @@
     content: url("./img/bubble.svg");
     position:absolute;
     animation: 25s bubble4 infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: scaleY(.1);
+        margin-left: 0;
+    }
+    100% {
+        transform: scaleY(.1);
+        margin-left: -1600px;
+    }
 }
 
 @keyframes turtle {
