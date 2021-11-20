@@ -1,9 +1,9 @@
 //animations
 .intro::after {
-    content: url("./img/wave.svg"); 
+    content: url("./img/wave2.svg"); 
     min-width: 100vw;
     position: absolute;
-    top: 305px;
+    top: 308px;
     width: 4000px;
     animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite alternate-reverse;
     transform: translate3d(0, 0, 0);
