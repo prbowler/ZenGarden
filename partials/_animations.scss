@@ -422,4 +422,15 @@
         width:40%;
     }
 
+    .extra4 {
+        content: url("./img/cliff.svg");
+        position: absolute;
+        transform: scale(.7, .5);
+        border: none;
+        bottom: -2050px;
+        left: 65%;
+        width: 40%;
+        z-index: 0;
+    }
+
 }
