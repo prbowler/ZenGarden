@@ -80,10 +80,10 @@
     .sidebar {
         grid-column: 3 / span 1;
         grid-row: 2 / span 1;
-        border: solid $color1;
-        border-radius: 15px;
-        border-style: ridge;
-        padding: 5px;
+        //border: solid $color1;
+        //border-radius: 15px;
+        //border-style: ridge;
+        padding: 0px;
         background-image: url("./img/cliff.svg");
         background-repeat: no-repeat;
         background-size: 100%;
