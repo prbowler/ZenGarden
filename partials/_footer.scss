@@ -7,10 +7,12 @@ footer {
   border-top: 50px solid $color6;
   text-align: center;
   height: 200px;
-  background-image: url(../img/seaweed.png) repeat-x;
-  background-size: cover;
+  background-image: url(../img/seaweed.png);
   grid-column: 1/10;
   grid-row: 6/7;
+  @media(min-width:600px) {
+     grid-row: 7/7;
+  }
 
 }
 
