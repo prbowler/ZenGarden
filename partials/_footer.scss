@@ -1,14 +1,19 @@
 //footer
-.footer {
+footer {
   content: " ";
   display: block;
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 50px;
   border-top: 50px solid $color6;
   text-align: center;
   height: 100px;
+  background: #000 url(../img/seaweed.svg) top left no-repeat;
+  background-size: cover;
+  grid-column: 1/10;
+  grid-row: 6/7;
+
 }
 
-.footer>a {
+footer>a {
   text-decoration: none;
 }

@@ -209,17 +209,25 @@ section div.preamble::after {
   }
 }
 
-.footer {
+footer {
   content: " ";
   display: block;
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 50px;
   border-top: 50px solid #003247;
   text-align: center;
   height: 100px;
+  background: #000 url(../img/seaweed.svg) top left no-repeat;
+  background-size: cover;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-column: 1/10;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
 }
 
-.footer > a {
+footer > a {
   text-decoration: none;
 }
 
@@ -418,40 +426,40 @@ table {
   z-index: 0;
 }
 
+/*
 .extra1 {
-  content: url("./img/grass.svg");
-  position: absolute;
-  bottom: -2130px;
-  left: 0px;
-  width: 100%;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  z-index: 1;
-  border: none;
+    content: url("./img/grass.svg");
+    position: absolute;
+    bottom:-2130px;
+    left:0px;
+    width:100%;
+    transform: scale(1, 1);
+    z-index:1;
+    border:none;
 }
 
 .extra2 {
-  content: url("./img/coral.png");
-  position: absolute;
-  bottom: -2050px;
-  left: 300px;
-  width: 40%;
-  animation: 45s seaweed infinite alternate-reverse;
-  border: none;
-  z-index: 0;
+    content: url("./img/coral.png");
+    position: absolute;
+    bottom:-2050px;
+    left:300px;
+    width:40%;
+    animation: 45s seaweed infinite alternate-reverse;
+    border:none;
+    z-index:0;
 }
 
 .extra3 {
-  content: url("./img/octopus.svg");
-  position: absolute;
-  bottom: -2150px;
-  left: 100px;
-  width: 40%;
-  animation: 30s octo infinite alternate-reverse;
-  border: none;
-  z-index: 0;
+    content: url("./img/octopus.svg");
+    position: absolute;
+    bottom:-2150px;
+    left:100px;
+    width:40%;
+    animation: 30s octo infinite alternate-reverse;
+    border:none;
+    z-index:0;
 }
-
+*/
 .explanation::before {
   content: url("./img/clownfish.svg");
   position: absolute;
