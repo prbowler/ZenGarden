@@ -4,7 +4,8 @@
 .resources {
   font-family: $primary-font;
   font-size: 1.5em;
-  color: $color5;
+  color: $color1;
+  font-weight: bold;
 }
 
 .design-name {
@@ -24,32 +25,42 @@
   color: black;
 }
 
-.next,
-.viewall {
-  margin: .5em;
-}
-
 .sidebar ul li a:link {
   text-decoration: underline;
 }
 
+
 .design-selection li:nth-child(2n+1) {
   clear: left;
-  border-right: solid .1em $color1;
+  border-right: solid .2em $color1;
 }
-
 
 .design-selection li {
   float: left;
   width: 45%;
-  padding: .5em;
+  padding: 0.5em;
+  
 }
 
-.design-archives li {
+ //the word by
+ .design-selection li,
+ .zen-resources li {
+      color: $color1;
+      font-style:italic;
+ }
+ 
+.design-archives{
+  clear: left;
+  border-right: solid .2em $color1;
   float: left;
+  width: 45%;
+  padding: 0.5em;
+}
+.design-archives li, .zen-resources li{
+  padding: 0.5em;
 }
 
-.zen-resources li {
+.zen-resources {
   float: left;
   width: 40%;
   padding: .3em;
@@ -57,13 +68,13 @@
 
 design-selection .design-name,
 .zen-resources a,
-li.viewall a {
+li.viewall a, .next {
   display: block;
   margin-bottom: 0.25em;
   text-transform: uppercase;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   .sidebar a {
     line-height: 1.6;
   }
@@ -77,13 +88,7 @@ li.viewall a {
     grid-row: 1 / span 1;
   }
 
-  //the word by
-  .design-selection li,
-  .zen-resources li {
-    clear: both;
-    // padding: 1em;
-    color: $color4;
-  }
+
 
   .design-archives {
     grid-column: 1 / span 1;

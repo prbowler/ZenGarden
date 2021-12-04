@@ -18,7 +18,7 @@
     display:flex;
     flex-direction:column;
     overflow:hidden;
-    max-height: 3000px;
+    max-height: auto;
     max-width: 100vw;
     //display: grid;
     //grid-template-columns: 1fr;
@@ -50,15 +50,9 @@
 }
 
 .sidebar {
-    //grid-column: 1 / span 1;
-    //grid-row: 3 / span 1;
-    //max-height: fit-content;
-    max-width: 25vw;
-    //overflow:hidden;
     position:relative;
-    /*@media(min-width:600px) {
-       position:
-     }*/
+     margin-left: 5em;
+     margin-top: 1em;
 
 }
 
