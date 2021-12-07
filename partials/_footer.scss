@@ -10,14 +10,13 @@ footer {
   background-image: url(../img/seaweed.png);
   grid-column: 1/10;
   grid-row: 6/7;
-  @media(min-width:600px) {
-     grid-row: 7/7;
+  
+  @media (min-width: 600px) {
+    grid-row: 7/7;
   }
-
 }
 
-footer>a {
+footer > a {
   padding-top: 10px;
   text-decoration: none;
 }
-
