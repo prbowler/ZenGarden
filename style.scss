@@ -53,6 +53,11 @@
   margin-top: 1em;
 }
 
+.extra1, .extra2, .extra3{
+  bottom:0;
+  display:none;
+}
+
 @media only screen and (min-width: 900px) {
   .page-wrapper {
     display: grid;
@@ -81,6 +86,7 @@
     background-image: url("./img/cliff.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+    z-index:1;
   }
 
   .extra1 {
@@ -106,5 +112,21 @@
     position: absolute;
     right: 20px;
     padding-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .extra1, .extra2, .extra3{
+    display:initial;
+  }
+
+  .extra1, .extra3 {
+    bottom:-85rem;
+  }
+
+  .extra2 {
+    bottom:-35rem;
+    left:55rem;
+    z-index:0;
   }
 }
