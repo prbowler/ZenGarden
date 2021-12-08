@@ -8,9 +8,10 @@
 @import "./partials/reset";
 @import "./partials/animations";
 
-.css-zen-garden {
+#css-zen-garden {
   margin: 0;
   padding: 0;
+  overflow-x: clip;
 }
 
 .page-wrapper {
@@ -121,7 +122,7 @@
   }
 
   .extra1, .extra3 {
-    bottom:-85rem;
+    bottom:-81rem;
   }
 
   .extra2 {
