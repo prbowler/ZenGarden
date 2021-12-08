@@ -63,7 +63,7 @@
 @media only screen and (min-width: 900px) {
   .page-wrapper {
     display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-columns: 2fr 3fr 4fr;
     grid-template-rows: 2fr 3fr;
   }
 
@@ -117,7 +117,23 @@
   }
 }
 
+@media only screen and (min-width: 1000px) {
+
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-rows: 2fr 3fr;
+  }
+}
+
 @media only screen and (min-width: 1400px) {
+
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 2fr 3fr;
+  }
+
   .extra1, .extra2, .extra3{
     display:initial;
   }
