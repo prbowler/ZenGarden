@@ -148,6 +148,7 @@ section div.preamble::after {
 
 .explanation, .participation, .benefits, .requirements {
   padding: 20px;
+  z-index: 1;
 }
 
 .main p {
@@ -221,13 +222,14 @@ footer {
   border-top: 50px solid #003247;
   text-align: center;
   height: 200px;
-  background-image: url(../img/seaweed.png);
+  background-image: url(../img/seaweed.svg);
   -ms-grid-column: 1;
   -ms-grid-column-span: 9;
   grid-column: 1/10;
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   grid-row: 6/7;
+  z-index: 1;
 }
 
 @media (min-width: 600px) {
@@ -462,46 +464,44 @@ table {
   z-index: 0;
 }
 
-/*
 .extra1 {
-    content: url("./img/grass.svg");
-    position: absolute;
-    bottom:-2130px;
-    left:0px;
-    width:100%;
-    transform: scale(1, 1);
-    z-index:1;
-    border:none;
+  content: url("./img/grass.svg");
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  z-index: 1;
+  border: none;
 }
 
 .extra2 {
-    content: url("./img/coral.png");
-    position: absolute;
-    bottom:-2050px;
-    left:300px;
-    width:40%;
-    animation: 45s seaweed infinite alternate-reverse;
-    border:none;
-    z-index:0;
+  content: url("./img/coral.png");
+  position: absolute;
+  left: 300px;
+  width: 40%;
+  animation: 45s seaweed infinite alternate-reverse;
+  border: none;
+  z-index: 0;
 }
 
 .extra3 {
-    content: url("./img/octopus.svg");
-    position: absolute;
-    bottom:-2150px;
-    left:100px;
-    width:40%;
-    animation: 30s octo infinite alternate-reverse;
-    border:none;
-    z-index:0;
+  content: url("./img/octopus.svg");
+  position: absolute;
+  left: 100px;
+  width: 40%;
+  animation: 30s octo infinite alternate-reverse;
+  border: none;
+  z-index: 0;
 }
-*/
+
 .explanation::before {
   content: url("./img/clownfish.svg");
   position: absolute;
   min-width: 150px;
   -webkit-animation: 30s fish1 infinite;
           animation: 30s fish1 infinite;
+  z-index: 0;
 }
 
 .explanation::after {
@@ -510,6 +510,7 @@ table {
   min-width: 150px;
   -webkit-animation: 30s turtle infinite;
           animation: 30s turtle infinite;
+  z-index: 0;
 }
 
 .participation::before {
@@ -518,6 +519,7 @@ table {
   -webkit-animation: 15s fish2 infinite;
           animation: 15s fish2 infinite;
   min-width: 150px;
+  z-index: 0;
 }
 
 .benefits::before {
@@ -1191,9 +1193,10 @@ table {
   }
 }
 
-.css-zen-garden {
+#css-zen-garden {
   margin: 0;
   padding: 0;
+  overflow-x: clip;
 }
 
 .page-wrapper {
@@ -1227,14 +1230,20 @@ table {
   position: relative;
   margin-left: 5em;
   margin-top: 1em;
+  z-index: 2;
+}
+
+.extra1, .extra2, .extra3 {
+  bottom: 0;
+  display: none;
 }
 
 @media only screen and (min-width: 900px) {
   .page-wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr 3fr 2fr;
-        grid-template-columns: 2fr 3fr 2fr;
+    -ms-grid-columns: 2fr 3fr 4fr;
+        grid-template-columns: 2fr 3fr 4fr;
     -ms-grid-rows: 2fr 3fr;
         grid-template-rows: 2fr 3fr;
   }
@@ -1297,5 +1306,51 @@ table {
     right: 20px;
     padding-top: 70px;
   }
+}
+
+@media only screen and (min-width: 1000px) {
+  .page-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 3fr 3fr;
+        grid-template-columns: 2fr 3fr 3fr;
+    -ms-grid-rows: 2fr 3fr;
+        grid-template-rows: 2fr 3fr;
+  }
+  .extra1, .extra2, .extra3 {
+    display: initial;
+  }
+  .extra1, .extra3 {
+    bottom: -81rem;
+  }
+  .extra2 {
+    bottom: -35rem;
+    left: 55rem;
+    z-index: 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .page-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 3fr 2fr;
+        grid-template-columns: 2fr 3fr 2fr;
+    -ms-grid-rows: 2fr 3fr;
+        grid-template-rows: 2fr 3fr;
+  }
+  /*.extra1, .extra2, .extra3{
+    display:initial;
+  }
+
+  .extra1, .extra3 {
+    bottom:-81rem;
+  }
+
+  .extra2 {
+    bottom:-35rem;
+    left:55rem;
+    z-index:0;
+  }*/
 }
 /*# sourceMappingURL=style.css.map */
