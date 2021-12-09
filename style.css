@@ -75,6 +75,12 @@ header h1 {
   font-family: "Seaweed Script", cursive;
 }
 
+@media (min-width: 300px) {
+  .summary, .preamble {
+    font-size: 2vh;
+  }
+}
+
 header h1, .summary, .preamble {
   padding: 20px;
 }
@@ -219,9 +225,8 @@ footer {
   display: block;
   padding-left: 30px;
   padding-top: 50px;
-  border-top: 50px solid #003247;
   text-align: center;
-  height: 200px;
+  height: 100px;
   /* background-image: url(../img/seaweed.svg);*/
   -ms-grid-column: 1;
   -ms-grid-column-span: 9;
@@ -242,6 +247,26 @@ footer {
 footer > a {
   padding-top: 10px;
   text-decoration: none;
+}
+
+/*a.zen-validate-html,
+a.zen-validate-css,
+a.zen-license,
+a.zen-github,
+a.zen-accessibility */
+footer a:hover, footer a:active {
+  background-color: #003247;
+  color: #fbeec1;
+  border: 2px solid #fbeec1;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer a:link, footer a:visited {
+  background-color: #fbeec1;
+  color: #003247;
 }
 
 .select,
@@ -1318,11 +1343,11 @@ table {
     -ms-grid-rows: 2fr 3fr;
         grid-template-rows: 2fr 3fr;
   }
-  .extra1, .extra2, .extra3 {
+  .extra1, .extra3 {
     display: initial;
   }
   .extra1, .extra3 {
-    bottom: -86rem;
+    bottom: -100rem;
   }
   .extra2 {
     bottom: -35rem;
@@ -1340,18 +1365,16 @@ table {
     -ms-grid-rows: 2fr 3fr;
         grid-template-rows: 2fr 3fr;
   }
-  /*.extra1, .extra2, .extra3{
-    display:initial;
+  .extra1, .extra2, .extra3 {
+    display: initial;
   }
-
   .extra1, .extra3 {
-    bottom:-81rem;
+    bottom: -81rem;
   }
-
   .extra2 {
-    bottom:-35rem;
-    left:55rem;
-    z-index:0;
-  }*/
+    bottom: -35rem;
+    left: 55rem;
+    z-index: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
