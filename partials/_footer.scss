@@ -19,16 +19,19 @@ footer {
 footer > a {
   padding-top: 10px;
   text-decoration: none;
-  
-}
-footer a{
   background: $color5 url(../img/icon-back.svg);
-    padding: 0.25em;
-    border-radius: 0.25em;
-    text-decoration: none;
-    color: $color6;
+  border-radius: 50%;
 }
+
 footer a:hover {
 	background: $color6 ;
   color: $color5;
+}
+
+.zen-validate-html
+{
+  padding: 0.25em;
+    border-radius: 0.25em;
+    text-decoration: none;
+    color: $color6;
 }
