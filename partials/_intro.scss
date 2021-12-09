@@ -51,6 +51,9 @@ header h1 {
     @media(min-width:600px) {
         font-size: 10vh;
       }
+      @media(min-width:300px) {
+        font-size: 5vh;
+      } 
     
 }
 .intro h2 {

@@ -60,6 +60,10 @@
   display:none;
 }
 
+@media only screen and (max-width: 300px) {
+  
+}
+
 @media only screen and (min-width: 900px) {
   .page-wrapper {
     display: grid;
@@ -125,7 +129,7 @@
     grid-template-rows: 2fr 3fr;
   }
 
-  .extra1, .extra2, .extra3{
+  .extra1, .extra3{
     display:initial;
   }
 
