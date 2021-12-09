@@ -245,7 +245,8 @@ footer {
 }
 
 footer > a {
-  padding-top: 0px;
+  padding: 5px;
+  margin-right: 5px;
   text-decoration: none;
 }
 
