@@ -222,7 +222,7 @@ footer {
   border-top: 50px solid #003247;
   text-align: center;
   height: 200px;
-  background-image: url(../img/seaweed.svg);
+  /* background-image: url(../img/seaweed.svg);*/
   -ms-grid-column: 1;
   -ms-grid-column-span: 9;
   grid-column: 1/10;
@@ -475,16 +475,17 @@ table {
   border: none;
 }
 
+/*
 .extra2 {
-  content: url("./img/coral.png");
-  position: absolute;
-  left: 300px;
-  width: 40%;
-  animation: 45s seaweed infinite alternate-reverse;
-  border: none;
-  z-index: 0;
-}
-
+    content: url("./img/coral.png");
+    position: absolute;
+    //bottom:-2050px;
+    left:300px;
+    width:40%;
+    animation: 45s seaweed infinite alternate-reverse;
+    border:none;
+    z-index:0;
+}*/
 .extra3 {
   content: url("./img/octopus.svg");
   position: absolute;
@@ -1321,7 +1322,7 @@ table {
     display: initial;
   }
   .extra1, .extra3 {
-    bottom: -81rem;
+    bottom: -86rem;
   }
   .extra2 {
     bottom: -35rem;
