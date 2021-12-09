@@ -6,32 +6,29 @@ footer {
   padding-top: 50px;
   text-align: center;
   height: 100px;
- /* background-image: url(../img/seaweed.svg);*/
+  /* background-image: url(../img/seaweed.svg);*/
   grid-column: 1/10;
   grid-row: 6/7;
-  z-index:1;
-  
+  z-index: 1;
+
   @media (min-width: 600px) {
     grid-row: 7/7;
   }
 }
 
-footer > a {
+footer>a {
   padding-top: 10px;
   text-decoration: none;
-  background: $color5 url(../img/icon-back.svg);
   border-radius: 50%;
 }
 
-footer a:hover {
-	background: $color6 ;
-  color: $color5;
-}
 
-.zen-validate-html
-{
-  padding: 0.25em;
-    border-radius: 0.25em;
-    text-decoration: none;
-    color: $color6;
+
+.zen-validate-html,
+.zen-validate-css,
+.zen-license,
+.zen-github,
+.zen-accessibility {
+
+  background: $color5 url(../img/icon-back.svg);
 }
