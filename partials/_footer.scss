@@ -28,7 +28,7 @@ footer>a {
 a.zen-validate-css,
 a.zen-license,
 a.zen-github,
-a.zen-accessibility */
+a.zen-accessibility 
 
 
 footer a:hover, footer a:active{
@@ -44,4 +44,20 @@ footer a:hover, footer a:active{
 footer a:link, footer a:visited{
   background-color: $color5;
   color: $color6;
+}
+*/
+
+
+
+footer a:hover, footer a:active{
+  background-image: url(../img/icon.svg);
+  color: $color6;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer a:link, footer a:visited{
+  background-image: url(../img/icon-dark.svg);
+  color: $color5;
 }
