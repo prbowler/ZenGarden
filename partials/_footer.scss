@@ -19,16 +19,29 @@ footer {
 footer>a {
   padding-top: 10px;
   text-decoration: none;
-  border-radius: 50%;
+  
 }
 
 
 
-a.zen-validate-html,
+/*a.zen-validate-html,
 a.zen-validate-css,
 a.zen-license,
 a.zen-github,
-a.zen-accessibility {
+a.zen-accessibility */
 
-  background-image: url(../img/icon-back.svg);
+
+footer>a:hover, footer>a:active{
+  background-color: $color6;
+  color: color5;
+  border: 2px solid $color5;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer>a:link, footer>a:visited{
+  background-color: $color5;
+  color: $color6;
 }
