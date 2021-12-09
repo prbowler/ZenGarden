@@ -4,13 +4,12 @@ footer {
   display: block;
   padding-left: 30px;
   padding-top: 50px;
-  border-top: 50px solid $color6;
   text-align: center;
-  height: 200px;
+  height: 100px;
  /* background-image: url(../img/seaweed.svg);*/
   grid-column: 1/10;
   grid-row: 6/7;
-  z-index:2;
+  z-index:1;
   
   @media (min-width: 600px) {
     grid-row: 7/7;
@@ -20,4 +19,16 @@ footer {
 footer > a {
   padding-top: 10px;
   text-decoration: none;
+  
+}
+footer a{
+  background: $color5 url(../img/icon-back.svg);
+    padding: 0.25em;
+    border-radius: 0.25em;
+    text-decoration: none;
+    color: $color6;
+}
+footer a:hover {
+	background: $color6 ;
+  color: $color5;
 }
