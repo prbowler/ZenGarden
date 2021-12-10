@@ -109,13 +109,6 @@
     grid-row: 3;
     overflow: hidden;
   }
-
-  .preamble {
-    width: 65%;
-    position: absolute;
-    right: 20px;
-    padding-top: 70px;
-  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -138,6 +131,66 @@
     bottom:-35rem;
     left:55rem;
     z-index:0;
+  }
+// little cloud
+  .summary::before {
+    content: url("./img/cloud.svg");
+    position: absolute;
+    left: -160px;
+    top: 120px;
+    transform:  scale(1.3);
+    animation: 100s cloud linear infinite;
+    animation-timing-function: ease-in-out;
+  }
+  .summary::after {
+    content: url("./img/cloud.svg");
+    position: absolute;
+    left: 350px;
+    top: -30px;
+    transform:  scale(1.3);
+    animation: 150s cloud linear infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes cloud {
+    0% {
+        transform: translateX(50%);
+    }
+   
+    50% {
+       transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+   }
+}
+
+  .summary {
+    position: absolute;
+    margin-top: -120px;
+    right: 50px;
+    background: url("./img/cloud.svg"); 
+    background-repeat: no-repeat;
+    height: 220px;
+    background-size: 320px;
+    width: 300px;
+    animation: 110s cloud linear infinite;
+  }
+  .summary p:nth-child(1) {
+    padding: 50px 80px 0px 60px;
+  }
+
+  .preamble {
+    width: 55%;
+    position: absolute;
+    right: 50px;
+    top: 80px;
+    font-size: .9rem;
+    margin-top: 90px;
+  }
+
+  .preamble::after {
+    content: url("./img/starfish.svg");
+    transform: scale(3);
   }
 
 }
