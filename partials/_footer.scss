@@ -6,9 +6,6 @@ footer {
   padding-top: 50px;
   text-align: center;
   height: 100px;
-  /* background-image: url(../img/seaweed.svg);*/
-  //grid-column: 1/10;
-  //grid-row: 6/7;
   z-index: 3;
 
   @media (min-width: 600px) {
@@ -22,15 +19,6 @@ footer>a {
   text-decoration: none;
   
 }
-
-
-
-/*a.zen-validate-html,
-a.zen-validate-css,
-a.zen-license,
-a.zen-github,
-a.zen-accessibility */
-
 
 footer a:hover, footer a:active{
   background-color: $color6;

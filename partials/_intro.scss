@@ -11,18 +11,9 @@ section.intro {
     url("./img/beach-castle.svg") 0px 150px, 
     url("./img/sky.svg");
     height: 100vh;
-    //background: url("./img/sun.svg");
     background-repeat: no-repeat;
-    //background-size: 20px, cover;
-    //background-position: center center;
-    //background-attachment: fixed;
-    //font: $secondary-font;
     position: relative;
-  // /animation-name: ocean;
-  //animation-duration: 5s;
-  //animation-iteration-count: infinite;
-    // https://codepen.io/tedmcdo/pen/PqxKXg?editors=1100
-    
+  
 }
 @keyframes ocean {
     0%   { left:0px; top:0px;}
@@ -30,12 +21,6 @@ section.intro {
     50%  { left: 0px; top:0px;}
    
   }
-// .intro h1::before {
-//   display: grid;
-//     grid-template-columns: 1fr 1fr 1fr 1fr; 
-// background-image: url("./img/sun.svg");
-// outline: 3px solid green;
-// }
 
 header h1 {
   text-decoration: green wavy underline;
@@ -79,25 +64,7 @@ header h1, .summary, .preamble {
 .summary p >a {
   text-decoration: none;
 }
-/*.preamble {
-  width: 60vw;
-  margin-top: 50px;
-  text-align: center;
-  margin-left: auto; 
-margin-right: 0;
-background: url("./img/wave.svg") repeat-x; 
-  position: absolute;
-  top: 430px;
-  width: 6400px;
-  height: 98px;
-  animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-  overflow: hidden;
-}
 
-section div.preamble::after {
-  
-}*/
 .preamble h3 {
 font-weight: bold;
 font-size: 20px;

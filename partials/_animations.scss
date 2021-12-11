@@ -113,27 +113,22 @@
 
 @keyframes seaweed {
     0% {
-        //transform: scaleY(1);
         transform: scale(1, 1);
         margin-left: 0;
     }
     25% {
-        //transform: scaleY(.75);
         transform: scale(1.25, .75);
         margin-left: 5px;
     }
     50% {
-        //transform: scaleY(1);
         transform: scale(1, 1);
         margin-left: 0;
     }
     75% {
-        //transform: scaleY(.75);
         transform: scale(1.25, .75);
         margin-left: 5px;
     }
     100% {
-        //transform: scaleY(1);
         transform: scale(1, 1);
         margin-left: 0;
     }
