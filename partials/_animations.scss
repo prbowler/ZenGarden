@@ -18,20 +18,9 @@
     left:0px;
     width:100%;
     transform: scale(1, 1);
-    z-index:1;
+    z-index:2;
     border:none;
 }
-/*
-.extra2 {
-    content: url("./img/coral.png");
-    position: absolute;
-    //bottom:-2050px;
-    left:300px;
-    width:40%;
-    animation: 45s seaweed infinite alternate-reverse;
-    border:none;
-    z-index:0;
-}*/
 
 .extra3 {
     content: url("./img/octopus.svg");
@@ -41,7 +30,7 @@
     width:40%;
     animation: 30s octo infinite alternate-reverse;
     border:none;
-    z-index:0;
+    z-index:1;
 }
 
 
